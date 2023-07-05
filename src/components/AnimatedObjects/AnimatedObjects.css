@@ -1,0 +1,66 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.wareHouseLeft img{
+    width: 100%;
+    height: 99vh;
+    
+}
+.wareHouseLeft{
+    height: 99vh;
+}
+/***********************  */
+.leftTruck img{
+    width: 350px;
+    height: 200px;
+    
+}
+.leftTruck{
+    position: relative;
+    z-index: 9999;
+    bottom: 40vh;
+    width: 350px;
+}
+/* ************************ */
+.rightTruck img{
+    width: 400px;
+    height: 300px;
+    
+}
+.rightTruck{
+    position: relative;
+    z-index: 9999;
+    bottom: 82vh;
+    left: 40vw;
+   
+    width: 350px;
+}
+/* ****************** */
+.manWithBox img{
+    width: 60px;
+    height: 80px;
+    /* border: 1px solid black; */
+    
+}
+.manWithBox{
+    position: relative;
+    z-index: 9999;
+    bottom: 140vh;
+    left: 25vw;
+    width: 60px;
+}
+/* ******************* */
+.cardBoardBoxes img{
+    width: 600px;
+    height: 500px;
+}
+.cardBoardBoxes{
+    position: relative;
+    z-index: 9999;
+    bottom: 175vh;
+    left: 35vw;
+    width: 60px;
+}

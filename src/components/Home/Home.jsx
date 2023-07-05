@@ -12,7 +12,7 @@ const Home = () => {
       <div className="right-column">
         <img  src="https://images.pexels.com/photos/2091159/pexels-photo-2091159.jpeg?auto=compress&cs=tinysrgb&w=600" alt="" />
       </div>
-    </div>
+    </div> 
     <div className="aboutus-container">
         <section className='aboutus-catchyLine'>
             <h2> 

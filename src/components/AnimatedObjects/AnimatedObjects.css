@@ -26,8 +26,8 @@
 }
 /* ************************ */
 .rightTruck img{
-    width: 400px;
-    height: 250px;
+    width: 500px;
+    height: 350px;
     
 }
 .rightTruck{
@@ -54,13 +54,13 @@
 }
 /* ******************* */
 .cardBoardBoxes img{
-    width: 600px;
+    width: 700px;
     height: 500px;
 }
 .cardBoardBoxes{
     position: relative;
     z-index: 9999;
     bottom: 175vh;
-    left: 35vw;
+    left: 25vw;
     width: 60px;
 }

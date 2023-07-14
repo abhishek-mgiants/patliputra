@@ -1,72 +1,38 @@
-
+import React from 'react';
 import './Home.css';
 
 const Home = () => {
-  const clientsData = [
-    {
-      id: 1,
-      clientName: 'Amazon',
-      imgPath:'https://images.unsplash.com/photo-1633174524778-61a18ee54490?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTV8fGFtYXpvbnxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=500&q=60'
-    },
-    {
-      id: 2,
-      clientName: 'Amazon',
-      imgPath:'https://images.unsplash.com/photo-1633174524778-61a18ee54490?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTV8fGFtYXpvbnxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=500&q=60'
-    },
-    {
-      id: 3,
-      clientName: 'Amazon',
-      imgPath:'https://images.unsplash.com/photo-1633174524778-61a18ee54490?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTV8fGFtYXpvbnxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=500&q=60'
-    },
-    {
-      id: 4,
-      clientName: 'Amazon',
-      imgPath:'https://images.unsplash.com/photo-1633174524778-61a18ee54490?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTV8fGFtYXpvbnxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=500&q=60'
-    },
-    {
-      id: 5,
-      clientName: 'Amazon',
-      imgPath:'https://images.unsplash.com/photo-1633174524778-61a18ee54490?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTV8fGFtYXpvbnxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=500&q=60'
-    },
-    {
-      id: 6,
-      clientName: 'Amazon',
-      imgPath:'https://images.unsplash.com/photo-1633174524778-61a18ee54490?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTV8fGFtYXpvbnxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=500&q=60'
-    }
-  ]
   return (
     <>
-    <div className="home-container">
-      <div className="left-column">
-        <h1 className="tagline">You Trust,<br/> We Deliver</h1>
-        <button className="contact-button">Contact Us</button>
-      </div>
-      <div className="right-column">
-        <img  src="https://images.pexels.com/photos/2091159/pexels-photo-2091159.jpeg?auto=compress&cs=tinysrgb&w=600" alt="" />
-      </div>
-    </div> 
-    <div className="aboutus-container">
-        <section className='aboutus-catchyLine'>
-            <h2> 
-                Where We Come From
-            </h2>
-            <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis sint ex aspernatur eaque assumenda unde ullam minima, incidunt corrupti odio necessitatibus quasi ducimus delectus, cumque voluptas dicta iste, quaerat cum?
-            </p>
-            <button className='aboutus-cta'>Read More</button>
+      <div className="home-container">
+        <nav className="navbar">
+          <ul className="nav-links">
+            <li className="nav-link"><a href="#home">Home</a></li>
+            <li className="nav-link with-dropdown">
+              <a href="#services">Services</a>
+              <ul className="dropdown-menu">
+                <li className="dropdown-item"><a href="#service1">Service 1</a></li>
+                <li className="dropdown-item"><a href="#service2">Service 2</a></li>
+                <li className="dropdown-item"><a href="#service3">Service 3</a></li>
+                <li className="dropdown-item"><a href="#service4">Service 4</a></li>
+                <li className="dropdown-item"><a href="#service5">Service 5</a></li>
+                <li className="dropdown-item"><a href="#service6">Service 6</a></li>
+              </ul>
+            </li>
+            <li className="nav-link"><a href="#about">About Us</a></li>
+            <li className="nav-link"><a href="#contact">Contact Us</a></li>
+            <li className="brand-logo">
+              <img src="src/assets/Patliputra_logistics.png" alt="Brand Logo" />
+            </li>
+          </ul>
+        </nav>
+
+        <section className="home-heading-section">
+          <h2 className="home-heading">You Trust We Deliver</h2>
+          <p className="home-description">Moving is not an easy process and finding the right  moving  company can be crucial for avoiding problems like overcharging,  losing time and even having stolen or  damage item But now it's easy with us</p>
+          <button className="cta-button">Contact Us</button>
         </section>
-        <div className="clients-container">
-          {
-            clientsData.map((client) => (
-              <div key={client.id} className="clients-card">
-            <img src={client.imgPath} alt="" />
-                <div className="client-name">{ client.clientName}</div>
-           </div>
-            ))
-          }
-        </div> 
-     
-    </div>
+      </div>
     </>
   );
 };

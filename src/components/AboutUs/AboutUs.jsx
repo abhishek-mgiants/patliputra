@@ -3,25 +3,25 @@ const AboutUs = () => {
   return (
       <>
           <div className="aboutUs-container">
-              <div className="aboutWareHouse">
-                  <img src="src/assets/wareHouseLeft.png" alt="" />
-                  <div className="aboutus-description">
-                  <h2>About Us</h2>  
-                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod sunt aliquam officiis atque exercitationem nam culpa asperiores vitae quibusdam delectus laudantium debitis ipsam repellendus, vero adipisci, error aperiam nihil cupiditate.</p>
-                  <button className="about-cta">
-                      Read More
-                  </button>
+          <img  className='aboutTruck' src="src/assets/truckRight.png" alt="" />
+               <div className='aboutUsDescription'>
+               <h2>ABOUT US</h2>
+               <p>Patliputra is a strong SCM leaders and a leading provider of logistics services from India, offering a wide
+range of solutions to businesses of all sizes. We specialize in transportation, warehousing, and
+fulfillment, and we have a strongest network of facilities that allows us to deliver goods to any
+destination in the India. <br /> 
+<br />
+Our team of experts is dedicated to providing our customers with the highest level of service and end
+-to -end supply chain. We understand that logistics is a critical part of your business, and we work hard
+to ensure that your goods are delivered on time, in good condition, and at a competitive price.</p>
+               <button className='aboutusCta'>
+                Get Started
+               </button>
+                    
+               </div>
+         
                   </div>
-                  <div className="roadRight">
-                      <img src="src/assets/roadRight.png" alt="" />
-                      <div className="scooter">
-                      <img src="src/assets/scooter.png" alt="" />
-                  </div>
-                  </div>
-                  
-             </div>
-        
-          </div>
+               
       </>
   )
 }

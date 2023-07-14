@@ -1,0 +1,57 @@
+.clients-container {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: space-evenly;
+  gap: 20px;
+  margin-top: 20px;
+  animation: popup 12s linear infinite;
+}
+.clients-heading{
+  width: 100%;
+  height: auto;
+  font-size: 78px;
+  font-family: 'Agency FB';
+  /* border: 1px solid red; */
+  margin-top: 30vh;
+  text-align: center;
+  color: blue;
+}
+.clients-heading span{
+  color: orange;
+}
+@keyframes popup {
+  0% {
+    transform: translate(100%, 0);
+  }
+  50% {
+    transform: translate(0, 0);
+  }
+  100% {
+    transform: translate(-100%, 0);
+  }
+}
+
+.clients-container:hover {
+  animation-play-state: paused;
+}
+
+.clients-card {
+  width: 200px;
+  height: 140px;
+  padding: 5px;
+  border: 1px solid grey;
+  border-radius: 8px;
+}
+
+.clients-card img {
+  width: 100%;
+  border-radius: 8px;
+}
+
+.client-name {
+  margin-top: 10px;
+  text-align: center;
+  font-size: 18px;
+  font-weight: bold;
+}

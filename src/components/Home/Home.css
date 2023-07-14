@@ -1,120 +1,140 @@
-.home-container {
-    display: grid;
-    grid-template-columns: 1fr 2fr;
-    height: 600px;
-    width: 100vw;
+/* Home.css */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
   }
   
-  .left-column {
+  .home-container {
+    background: url('src/assets/homepageBg.jpg');
+    background-size: 99vw 100vh;
+    background-repeat: no-repeat;
+    width: 99vw;
+    height: 100vh;
+  }
+  
+  .navbar {
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background-color: #f0f0f0;
-    padding: 2rem;
-  }
-  .right-column img{
-    width: 100%;
-    object-fit: contain;
-  }
-  .curved-border {
-    width: 600px;
-    height: 600px;
-    background-color: lightblue;
-    float: left;
-    shape-outside: circle(50% at 0 50%);
-    clip-path: circle(50% at 0 50%);
+    justify-content: flex-end;
+    background-color: transparent;
+    margin-bottom: 20px;
     
   }
   
-  .tagline {
-    font-size: 2rem;
-    margin-bottom: 1rem;
+  .nav-links {
+    display: flex;
+    list-style-type: none;
+    margin-left: 28vw;
+    margin-top: 60px;
   }
   
-  .contact-button {
-    padding: 1rem 2rem;
-    text-align: center;
+  .nav-link {
+    position: relative;
+    padding: 5px;
+  
+  }
+  .brand-logo img{
+    width: 100px;
+    height: 100px;
+    background-color: white;
+    border-radius: 50%;
+    margin-left: 70%;
+  }
+  
+  .nav-link a {
+    color: rgb(255, 255, 255);
+    font-family: 'Agency FB';
+    font-size: 23px;
+    text-decoration: none;
+  }
+  
+  .a:hover {
     font-weight: bold;
-    color: rgb(0, 0, 0);
-    background-color: rgb(61, 180, 220);
-    
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    font-size: 1.2rem;
   }
-  .contact-button:hover{
-    background-color: lightblue;
+  
+  .with-dropdown:hover .dropdown-menu {
+    display: block;
   }
-  .aboutus-container{
-    margin-top: 100px;
-    height: 600px;
-    width: 100vw;
-    margin-bottom: 100px;
-    
+  
+  .dropdown-menu {
+    display: none;
+    position: absolute;
+    list-style-type: none;
+    background-color: #f9f9f9;
+    padding: 0;
+    margin: 0;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    animation: fade-in 0.3s ease-in;
+    border-radius: 12px;
+  }
+  
+  .dropdown-item {
+    padding: 10px;
+  }
+  
+  .dropdown-item a {
+    color: black;
+    text-decoration: none;
+  }
+  
+  .home-heading-section {
+    text-align: left;
+    margin-left: 200px;
+    /* border: 1px solid red; */
+    width: 50rem;
+    height: 300px;
+    margin-top: 40px;
 
   }
-.aboutus-catchyLine h2{
-    text-align: center;
-    font-size: 48px;
+  
+  .home-heading {
+    font-family: "Agency FB", sans-serif;
+    font-size: 100px;
     font-weight: bold;
-    line-height: 10px;
-    margin-bottom: 50px;
+    letter-spacing: 2px;
+    margin-bottom: 5vh;
+   color: white;
+  }
+  
+  .home-description {
+    font-size: 19px ;
+    font-family: 'Helvetica';
+    font-weight: 600;
+    color: white;
+    text-align: justify;
+    /* border: 1px solid red; */
+    width: 470px;
     
-}
-.aboutus-catchyLine p{
-    text-align: center;
-    height: 200px;
-    width: 500px;
-    margin-left: 430px;
-    padding-top: 30px;
-    font-size: 18px;
-    
-}
-.aboutus-cta{
-    height: 100px;
-    width: 100px;
-    margin-left: 620px;
-    border-radius: 50%;
-    font-size: 18px;
-    
-    font-weight: bold;
-    transition: all 0.5s;
-    border: 1px solid black;
-    background: linear-gradient(to right, rgb(204, 218, 215), rgb(0, 234, 255) )
-}
-.aboutus-cta:hover{
-     height: 70px;
+  }
+  
+  .cta-button {
     width: 150px;
-    border: 2px solid black;
-    border-radius: 10px;
-    font-size: 22px;
-    font-weight: bold;
-    background: linear-gradient(to right, rgb(0, 234, 255), rgb(204, 218, 215) )
-   
-}
-.clients-container{
-  width: 100%;
-  height: 600px;
-  display: flex;
-  justify-content: space-evenly;
-  margin-top: 50px;
-}
-.clients-card{
-  width: 200px;
-  height: 140px;
-  padding: 5px;
-  border: 1px solid grey;
-  border-radius: 8px;
-}
-.clients-card img{
-  width: 100%;
-  border-radius: 8px;
-}
-.client-name{
-  margin-top: 10px;
-  text-align: center;
-  font-size: 18px;
-  font-weight: bold;
-}
+    height: 60px;
+    border: none;
+    font-size: 28px ;
+    background-color: #2E2867;
+    color: white;
+    cursor: pointer;
+    transition: all 0.4s;
+    margin-top: 50px;
+    font-family: 'Agency FB';
+  }
+  
+  .cta-button:hover {
+    background-color: #C86E29;
+  }
+  
+  .brand-logo img {
+    vertical-align: middle;
+  }
+  
+  @keyframes fade-in {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  

@@ -1,3 +1,4 @@
+
 .clients-container {
   width: 100%;
   height: auto;
@@ -6,12 +7,14 @@
   gap: 20px;
   margin-top: 20px;
   animation: popup 12s linear infinite;
+
 }
 .clients-heading{
   width: 100%;
   height: auto;
-  font-size: 78px;
-  font-family: 'Agency FB';
+  font-family: "Agency FB", sans-serif;
+  font-size: 70px;
+  font-weight: bold;
   /* border: 1px solid red; */
   margin-top: 30vh;
   text-align: center;

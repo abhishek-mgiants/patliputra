@@ -37,7 +37,7 @@ const Clients = () => {
         
       ]
   return (
-    <>
+    <div className='client-main'>
     <div className='clients-heading'>
       OVER <span>1000+ CLIENTS</span> ALL OVER INDIA 
      </div>
@@ -52,7 +52,7 @@ const Clients = () => {
           }
         </div> 
         
-    </>
+    </div>
   )
 }
 

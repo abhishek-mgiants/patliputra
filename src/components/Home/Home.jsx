@@ -32,7 +32,7 @@ const Home = () => {
           <p className="home-description">Moving is not an easy process and finding the right  moving  company can be crucial for avoiding problems like overcharging,  losing time and even having stolen or  damage item But now it's easy with us</p>
           <button className="cta-button">Contact Us</button>
         </section>
-      </div>
+      </div> 
     </>
   );
 };

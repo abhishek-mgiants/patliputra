@@ -1,0 +1,36 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.whyusContainer{
+    width: 100vw;
+    height: 100vh;
+    background: url('src/assets/whyChooseUsbg.jpg');
+    background-repeat: no-repeat;
+    background-size: 100vw 100vh;
+    margin:100px 0;
+    position: relative;
+}
+.whyusContainer img{
+    position: absolute;
+    top: 10vh;
+    left: 37vw;
+    transition: all 0.4s;
+    
+}
+.whyusContainer:hover img{
+    transform: translate(100px,40px) scale(1.1);
+}
+.whyusDescription{
+    width: 400px;
+    height: auto;
+    position: absolute;
+    top: 5vh;
+   right: 8vw;
+}
+.whyusDescription h3{
+    font-size: 66px;
+    font-family: 'Agency FB';
+    letter-spacing: 5px;
+}

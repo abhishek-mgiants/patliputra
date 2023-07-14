@@ -20,14 +20,11 @@
 .navbar-nav {
   display: flex;
   list-style: none;
-  margin: 0;
-  padding: 0;
-  border: 1px solid rgb(0, 255, 34);
+ 
 }
 
 .nav-item {
-  margin-left: 1rem;
-  border: 1px solid red;
+
 }
 
 .nav-link {
@@ -38,7 +35,7 @@
   margin: 0.5rem;
   transition: color 0.3s;
   font-size: 20px;
-  border: 1px solid black; 
+  /* border: 1px solid black;  */
 }
 
 .nav-link:hover {
@@ -52,6 +49,7 @@
 
 .nav-link:hover i {
   display: inline-block;
+ 
 }
 
 .fa-caret-left::before,

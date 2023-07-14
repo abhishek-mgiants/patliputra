@@ -1,7 +1,39 @@
-import React from 'react';
+
 import './Home.css';
 
 const Home = () => {
+  const clientsData = [
+    {
+      id: 1,
+      clientName: 'Amazon',
+      imgPath:'https://images.unsplash.com/photo-1633174524778-61a18ee54490?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTV8fGFtYXpvbnxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=500&q=60'
+    },
+    {
+      id: 2,
+      clientName: 'Amazon',
+      imgPath:'https://images.unsplash.com/photo-1633174524778-61a18ee54490?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTV8fGFtYXpvbnxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=500&q=60'
+    },
+    {
+      id: 3,
+      clientName: 'Amazon',
+      imgPath:'https://images.unsplash.com/photo-1633174524778-61a18ee54490?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTV8fGFtYXpvbnxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=500&q=60'
+    },
+    {
+      id: 4,
+      clientName: 'Amazon',
+      imgPath:'https://images.unsplash.com/photo-1633174524778-61a18ee54490?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTV8fGFtYXpvbnxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=500&q=60'
+    },
+    {
+      id: 5,
+      clientName: 'Amazon',
+      imgPath:'https://images.unsplash.com/photo-1633174524778-61a18ee54490?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTV8fGFtYXpvbnxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=500&q=60'
+    },
+    {
+      id: 6,
+      clientName: 'Amazon',
+      imgPath:'https://images.unsplash.com/photo-1633174524778-61a18ee54490?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTV8fGFtYXpvbnxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=500&q=60'
+    }
+  ]
   return (
     <>
     <div className="home-container">
@@ -23,41 +55,17 @@ const Home = () => {
             </p>
             <button className='aboutus-cta'>Read More</button>
         </section>
-        <div className="aboutus-clients">
-            <div className="clients-heading">
-                <h1>Our Clients</h1>
-            </div>
-  <div className="marquee">
-    <span className="client-name">Amazon</span>
-    <span className="client-name">Flipkart</span>
-    <span className="client-name">Myntra</span>
-    <span className="client-name">Ajio</span>
-    <span className="client-name">Olx</span>
-    <span className="client-name">Amazon</span>
-    <span className="client-name">Flipkart</span>
-    <span className="client-name">Myntra</span>
-    <span className="client-name">Ajio</span>
-    <span className="client-name">Olx</span>
-    <span className="client-name">Amazon</span>
-    <span className="client-name">Flipkart</span>
-    <span className="client-name">Myntra</span>
-    <span className="client-name">Ajio</span>
-    <span className="client-name">Olx</span>
-    <span className="client-name">Amazon</span>
-    <span className="client-name">Flipkart</span>
-    <span className="client-name">Myntra</span>
-    <span className="client-name">Ajio</span>
-    <span className="client-name">Olx</span>
-    <span className="client-name">Amazon</span>
-    <span className="client-name">Flipkart</span>
-    <span className="client-name">Myntra</span>
-    <span className="client-name">Ajio</span>
-    <span className="client-name">Olx</span>
-
-    
-  </div>
-</div>
-
+        <div className="clients-container">
+          {
+            clientsData.map((client) => (
+              <div key={client.id} className="clients-card">
+            <img src={client.imgPath} alt="" />
+                <div className="client-name">{ client.clientName}</div>
+           </div>
+            ))
+          }
+        </div> 
+     
     </div>
     </>
   );

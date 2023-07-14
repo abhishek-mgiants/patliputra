@@ -1,0 +1,68 @@
+.servcies-card-container{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 50px;
+    padding: 10px;
+    margin-top: 50px;
+    
+}
+.image-container {
+    position: relative;
+    width: 300px;
+    height: 330px;
+    overflow: hidden;
+    border: 1px solid lightgray;
+    border-radius: 12px;  
+  } 
+  .image1 {
+    width: 100%;
+    height: auto;
+    /* transform: translateX(-50px); */
+    transition: transform 0.5s ease-out;
+    margin-top: 10px;
+  }
+  .image-container:hover .image1{
+    transform: translate(350px,100px);
+  }
+  .image2{
+    width: 100%;
+    height: auto;
+    position: absolute;
+    bottom: 70%;
+    left: 0%;
+    transform: translateX(-400px);
+    transition: transform 0.5s ease-out;
+  }
+  .image-container:hover .image2{
+    transform: translate(10px,100px);
+  }
+
+.service-description{
+ display:  flex;
+ gap: 30%;
+ margin-top: 30px;
+
+}
+.service-heading{
+    font-size: 22px;
+    font-weight: bold;
+    padding: 10px;
+}
+.service-cta button{
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    border: none;
+    font-weight: bold;
+    background-color: aquamarine;
+    padding: 3px;
+    rotate: -130deg;
+    transition: 0.5s;
+    
+}
+.image-container:hover .service-cta button{
+    background-color: black;
+    color: white;
+}

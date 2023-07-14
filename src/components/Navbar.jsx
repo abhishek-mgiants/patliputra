@@ -8,7 +8,7 @@ const Navbar = () => {
         <img src="src/assets/Patliputra_logistics.png" alt="Logo" />
       </div>
       <ul className="navbar-nav">
-        <li className="nav-item">
+        <li className="nav-item"> 
           {/* <a href="/home" className="nav-link">
             Home
           </a> */}

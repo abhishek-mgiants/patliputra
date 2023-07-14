@@ -1,0 +1,99 @@
+.footer-container{
+    width: 100%;
+    height: 300px;
+   margin-top: 10px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    background-color: rgb(181, 124, 238);
+}
+.first{
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+}
+.first-items{
+    border: 1px solid black;
+    background-color: chocolate;
+}
+
+.second{
+    position: relative;
+
+}
+.second-item{
+    width: 370px;
+    height: 150px;
+   border: 1px solid black;
+    background-color: chocolate;
+    margin-top: 62px;
+    margin-left: 50px;
+    rotate: 30deg;
+   
+}
+.second-item2{
+    width: 60px;
+    height: 179px;
+  border: 1px solid black;
+    position: absolute;
+    bottom: 0;
+    background-color: chocolate;
+}
+.third{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+   
+}
+.third-item1{
+    /* border: 1px solid black; */
+    position: relative;
+}
+.white-box{
+    height: 150px;
+    width: 80px;
+    background-color: white;
+    position: absolute;
+    bottom: 0; 
+    left: 30%;
+    border: 1px solid black;
+    
+}
+.third-item2{
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+
+}
+.third-boxes{
+    border: 1px solid black;
+    background-color: chocolate;
+}
+.third-one{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.third-one input[type='text']{
+  margin: 10px;
+    border: none;
+    height: 20px;
+    text-align: center;
+}
+.third-one input[type='email']{
+    margin: 0 10px;
+      border: none;
+      height: 20px;
+      text-align: center;
+  }
+  .third-one button{
+    width: 60px;
+    margin-left: 40%;
+    padding: 5px;
+    border: none;
+    border-radius: 8px;
+    font-weight: bold;
+    color: white;
+    background-color: rgb(181, 124, 238);
+    transition: 0.5s;
+}
+.third-one button:hover{
+    background-color: white;
+    color: black;
+}

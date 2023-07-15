@@ -24,8 +24,8 @@
   .nav-links {
     display: flex;
     list-style-type: none;
-    margin-left: 28vw;
-    margin-top: 10px;
+    margin-left: 38vw;
+    /* margin-top: 5px; */
     /* border: 1px solid rgb(153, 132, 11); */
     
   }
@@ -37,8 +37,8 @@
   
   } */
   .brand-logo img{
-    width: 100px;
-    height: 100px;
+    width: 80px;
+    height: 80px;
     background-color: white;
     border-radius: 50%;
     margin-left: 70%;
@@ -91,6 +91,7 @@
     width: 50rem;
     height: 300px;
     margin-top: 40px;
+    /* border: 2px solid red; */
 
   }
   
@@ -99,18 +100,22 @@
     font-size: 100px;
     font-weight: bold;
     letter-spacing: 2px;
-    margin-bottom: 5vh;
+    margin-bottom: 2vh;
    color: white;
+   margin-right: 15px;
+   /* border: 2px solid red; */
   }
   
   .home-description {
-    font-size: 19px ;
+    font-size: 16px ;
     font-family: 'Helvetica';
     font-weight: 600;
     color: white;
     text-align: justify;
     /* border: 1px solid red; */
     width: 470px;
+    margin-left: 10px;
+    /* border: 2px solid red; */
     
   }
   
@@ -123,8 +128,9 @@
     color: white;
     cursor: pointer;
     transition: all 0.4s;
-    margin-top: 50px;
+    /* margin-top: 10px; */
     font-family: 'Agency FB';
+    margin-left: 10px;
   }
   
   .cta-button:hover {

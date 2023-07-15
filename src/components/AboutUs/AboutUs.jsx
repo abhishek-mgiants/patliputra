@@ -5,7 +5,7 @@ const AboutUs = () => {
           <div className="aboutUs-container">
           <img  className='aboutTruck' src="src/assets/truckRight.png" alt="" />
                <div className='aboutUsDescription'>
-               <h2>ABOUT US</h2>
+               <h2>About Us</h2>
                <p>Patliputra is a strong SCM leaders and a leading provider of logistics services from India, offering a wide
 range of solutions to businesses of all sizes. We specialize in transportation, warehousing, and
 fulfillment, and we have a strongest network of facilities that allows us to deliver goods to any

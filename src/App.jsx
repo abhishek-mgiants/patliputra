@@ -8,6 +8,7 @@ import AboutUs from './components/AboutUs/AboutUs'
 import Footer from './components/Footer/Footer'
 import Clients from './components/Clients/Clients'
 import Whyus from './components/WhyUs/Whyus'
+import ContactUs from './components/ContactUs/ContactUs'
 
 export default function App() {
   return (
@@ -24,6 +25,7 @@ export default function App() {
      <div>
       <img src="src/assets/IndiaMap.jpg" style={{width:'100%', height:'100%'}} alt="" />
      </div>
+     <ContactUs/>
      <Footer/>
 
  

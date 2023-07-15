@@ -11,12 +11,12 @@ const Home = () => {
             <li className="nav-link with-dropdown">
               <a href="#services">Services</a>
               <ul className="dropdown-menu">
-                <li className="dropdown-item"><a href="#service1">Service 1</a></li>
-                <li className="dropdown-item"><a href="#service2">Service 2</a></li>
-                <li className="dropdown-item"><a href="#service3">Service 3</a></li>
-                <li className="dropdown-item"><a href="#service4">Service 4</a></li>
-                <li className="dropdown-item"><a href="#service5">Service 5</a></li>
-                <li className="dropdown-item"><a href="#service6">Service 6</a></li>
+                <li className="dropdown-item"><a href="#service1">Supply Chain Execution</a></li>
+                <li className="dropdown-item"><a href="#service2">Supply Chain Advisory</a></li>
+                <li className="dropdown-item"><a href="#service3">Distribution Network Management</a></li>
+                <li className="dropdown-item"><a href="#service4">Supplier & Inventory Management</a></li>
+                <li className="dropdown-item"><a href="#service5">Transportation Services</a></li>
+                <li className="dropdown-item"><a href="#service6">Last Mile Delivery</a></li>
               </ul>
             </li>
             <li className="nav-link"><a href="#about">About Us</a></li>

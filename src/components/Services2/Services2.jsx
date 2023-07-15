@@ -7,12 +7,12 @@ const Services2 = () => {
   useEffect(()=>{
     AOS.init({duration:1000})
    },[]) 
-  const servicesData = [{ id:1, name: 'Supply Chain Execution', imgPath: 'src/assets/leftTruck.png', dscrpstn: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis nesciunt' },
-    {id:2, name: 'Supply Chain Advisory', imgPath: 'src/assets/leftTruck.png', dscrpstn: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis nesciunt' },
-    { id:3,name: 'Distribution Network Management', imgPath: 'src/assets/leftTruck.png', dscrpstn: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis nesciunt' },
-    { id:4,name: 'Supplier & Inventory Management', imgPath: 'src/assets/leftTruck.png', dscrpstn: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis nesciunt' },
-    {id:5, name: 'Transportation Services', imgPath: 'src/assets/leftTruck.png', dscrpstn: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis nesciunt' },
-    { id:5,name: 'Last Mile Delivery', imgPath: 'src/assets/leftTruck.png', dscrpstn: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis nesciunt' },
+  const servicesData = [{ id:1, name: 'Supply Chain Execution', imgPath: 'https://github.com/abhishek-mgiants/patliputra/blob/master/src/assets/leftTruck.png?raw=true', dscrpstn: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis nesciunt' },
+    {id:2, name: 'Supply Chain Advisory', imgPath: 'https://github.com/abhishek-mgiants/patliputra/blob/master/src/assets/leftTruck.png?raw=true', dscrpstn: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis nesciunt' },
+    { id:3,name: 'Distribution Network Management', imgPath: 'https://github.com/abhishek-mgiants/patliputra/blob/master/src/assets/leftTruck.png?raw=true', dscrpstn: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis nesciunt' },
+    { id:4,name: 'Supplier & Inventory Management', imgPath: 'https://github.com/abhishek-mgiants/patliputra/blob/master/src/assets/leftTruck.png?raw=true', dscrpstn: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis nesciunt' },
+    {id:5, name: 'Transportation Services', imgPath: 'https://github.com/abhishek-mgiants/patliputra/blob/master/src/assets/leftTruck.png?raw=true', dscrpstn: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis nesciunt' },
+    { id:5,name: 'Last Mile Delivery', imgPath: 'https://github.com/abhishek-mgiants/patliputra/blob/master/src/assets/leftTruck.png?raw=true', dscrpstn: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis nesciunt' },
    ]
  
   return (

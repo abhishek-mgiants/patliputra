@@ -22,7 +22,7 @@ const Home = () => {
             <li className="nav-link"><a href="#about">About Us</a></li>
             <li className="nav-link"><a href="#contact">Contact Us</a></li>
             <li className="brand-logo">
-              <img src="src/assets/Patliputra_logistics.png" alt="Brand Logo" />
+              <img src="https://github.com/abhishek-mgiants/patliputra/blob/master/src/assets/Patliputra_logistics.png?raw=true" alt="Brand Logo" />
             </li>
           </ul>
         </nav>

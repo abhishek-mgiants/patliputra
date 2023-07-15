@@ -4,7 +4,7 @@ const Whyus = () => {
   return (
   <>
   <div className="whyusContainer">
-     <img src="src/assets/scooter.png" alt="" />
+     <img src="https://github.com/abhishek-mgiants/patliputra/blob/master/src/assets/scooter.png?raw=true" alt="" />
      <div className="whyusDescription">
         <h3>
             Why Choose Us

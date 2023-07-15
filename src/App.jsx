@@ -23,7 +23,7 @@ export default function App() {
      <Whyus/>
 
      <div>
-      <img src="src/assets/IndiaMap.jpg" style={{width:'100%', height:'100%'}} alt="" />
+      <img src="https://github.com/abhishek-mgiants/patliputra/blob/master/src/assets/IndiaMap.jpg?raw=true" style={{width:'100%', height:'100%'}} alt="" />
      </div>
      <ContactUs/>
      <Footer/>

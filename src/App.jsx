@@ -23,7 +23,35 @@ export default function App() {
      <Whyus/>
 
      <div>
+      <div className="map-container"
+      style={{ position:'relative'}}
+      >
       <img src="https://github.com/abhishek-mgiants/patliputra/blob/master/src/assets/IndiaMap.jpg?raw=true" style={{width:'100%', height:'100%'}} alt="" />
+      <div className="map-image-container"
+      style={{
+        position:'absolute',
+        width:'300px',
+        height:'350px',
+        overflow:'hidden',
+        border:'2px solid rgb(122, 122, 122)',
+        boxShadow:'0px 5px 10px black',
+        top:'20vh',
+        right:'10vw',
+        padding:'20px',
+        backgroundColor:'#e4e3ec'
+
+      }}
+      >
+        <h1>Locations</h1>
+        <ul>
+          <li>Gurgaon</li>
+          <li>Noida</li>
+          <li>Delhi</li>
+          <li>Mumbai</li>  
+        </ul>
+      </div>
+      </div>
+      
      </div>
      <ContactUs/>
      <Footer/>

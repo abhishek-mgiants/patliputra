@@ -9,7 +9,7 @@
     background: url('https://github.com/abhishek-mgiants/patliputra/blob/master/src/assets/whyChooseUsbg.jpg?raw=true');
     background-repeat: no-repeat;
     background-size: 100vw 120vh;
-    margin:100px 0;
+    margin:5px 0;
     position: relative;
 }
 .whyusContainer img{
@@ -23,14 +23,16 @@
     transform: translate(100px,40px) scale(1.1);
 }
 .whyusDescription{
-    width: 400px;
+    width: 450px;
     height: auto;
     position: absolute;
     top: 5vh;
    right: 8vw;
 }
 .whyusDescription h3{
-    font-size: 66px;
+    font-size: 72px;
     font-family: 'Agency FB';
     letter-spacing: 5px;
+    color:  #2E2867;
+    font-weight: bold;
 }

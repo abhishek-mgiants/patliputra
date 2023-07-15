@@ -18,6 +18,7 @@ const Services2 = () => {
   return (
     <>
     <div className='services-upperSection'>
+      <h1>Services</h1>
     <div className='servcies-card-container'>
       {
         servicesData.slice(0,3).map((service) => (

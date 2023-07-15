@@ -16,10 +16,11 @@ const Whyus = () => {
         Plan It
          </h2></Accordion.Header>
         <Accordion.Body>
-        Reduce costs
-<br />Improve efficiency
-<br />
-Improve customer service
+        <ul>
+          <li>Reduce Costs</li>
+           <li>Improve Efficiency</li>
+           <li>Improve Customer service</li>
+        </ul>
         </Accordion.Body>
       </Accordion.Item>
       <Accordion.Item eventKey="1">
@@ -29,7 +30,11 @@ Improve customer service
          </h2>
          </Accordion.Header>
         <Accordion.Body>
-       Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos, ducimus!
+        <ul>
+          <li>Increasing Efficiency </li>
+           <li>Reduced Risk</li>
+           <li>Increased Compliance</li>
+        </ul>
         </Accordion.Body>
       </Accordion.Item>
       <Accordion.Item eventKey="2" >
@@ -37,7 +42,11 @@ Improve customer service
             Run It
          </h2></Accordion.Header>
         <Accordion.Body>
-          Lorem ipsum dolor sit amet, consectetur 
+        <ul>
+          <li>Right Delivery Model</li>
+           <li>Partner with right suppliers</li>
+           <li>Technology Advantage</li>
+        </ul>
         </Accordion.Body>
       </Accordion.Item>
     </Accordion>

@@ -6,7 +6,7 @@
   }
   
   .home-container {
-    background: url('https://github.com/abhishek-mgiants/patliputra/blob/master/src/assets/homepageBg.jpg?raw=true');
+    background: url('homepageBg.jpg');
     background-size: 99vw 100vh;
     background-repeat: no-repeat;
     width: 99vw;

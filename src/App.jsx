@@ -26,7 +26,7 @@ export default function App() {
       <div className="map-container"
       style={{ position:'relative'}}
       >
-      <img src="https://github.com/abhishek-mgiants/patliputra/blob/master/src/assets/IndiaMap.jpg?raw=true" style={{width:'100%', height:'100%'}} alt="" />
+      <img src="assets/IndiaMap.jpg" style={{width:'100%', height:'100%'}} alt="" />
       <div className="map-image-container"
       style={{
         position:'absolute',

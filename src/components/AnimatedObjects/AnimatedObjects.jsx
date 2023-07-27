@@ -11,18 +11,18 @@ const AnimatedObjects = () => {
    <>
   
    <div data-aos="zoom-in-left"   className="wareHouseLeft">
-    <img src="https://github.com/abhishek-mgiants/patliputra/blob/master/src/assets/wareHouseLeft.png?raw=true" alt="" />
+    <img src="assets/wareHouseLeft.png" alt="" />
      <div data-aos="slide-right"  className="leftTruck">
-        <img src="https://github.com/abhishek-mgiants/patliputra/blob/master/src/assets/leftTruck.png?raw=true" alt="" />
+        <img src="assets/leftTruck.png" alt="" />
     </div>
      <div data-aos="slide-left"  className="rightTruck">
-        <img src="https://github.com/abhishek-mgiants/patliputra/blob/master/src/assets/rightTruck.png?raw=true" alt="" />
+        <img src="assets/rightTruck.png" alt="" />
     </div>
       <div data-aos="slide-left"   data-aos-offset="200" className="manWithBox">
-        <img src="https://github.com/abhishek-mgiants/patliputra/blob/master/src/assets/manWithBox.png?raw=true" alt="" />
+        <img src="assets/manWithBox.png" alt="" />
     </div>
      <div data-aos="slide-right" data-aos-offset="200" className='cardBoardBoxes'>
-    <img src="https://github.com/abhishek-mgiants/patliputra/blob/master/src/assets/cardBoardBoxes.png?raw=true" alt="" />
+    <img src="assets/cardBoardBoxes.png" alt="" />
    </div>
    </div>
   

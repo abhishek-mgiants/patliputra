@@ -6,7 +6,7 @@
   }
   
   .home-container {
-    background: url('homepageBg.jpg');
+    background: url('/homepageBg.jpg');
     background-size: 99vw 100vh;
     background-repeat: no-repeat;
     width: 99vw;

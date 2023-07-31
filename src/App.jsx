@@ -9,6 +9,8 @@ import Footer from './components/Footer/Footer'
 import Clients from './components/Clients/Clients'
 import Whyus from './components/WhyUs/Whyus'
 import ContactUs from './components/ContactUs/ContactUs'
+import About from './components/AboutUsPage/About'
+import ParticleBG from './components/AboutUs/ParticleBG'
 
 export default function App() {
   return (
@@ -55,7 +57,8 @@ export default function App() {
      </div>
      <ContactUs/>
      <Footer/>
-
+     <About/>
+    
  
    
     </>

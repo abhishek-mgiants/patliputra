@@ -12,7 +12,7 @@ const Services2 = () => {
     { id:3,name: 'Distribution Network Management', imgPath: 'assets/leftTruck.png', dscrpstn: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis nesciunt' },
     { id:4,name: 'Supplier & Inventory Management', imgPath: 'assets/leftTruck.png', dscrpstn: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis nesciunt' },
     {id:5, name: 'Transportation Services', imgPath: 'assets/leftTruck.png', dscrpstn: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis nesciunt' },
-    { id:5,name: 'Last Mile Delivery', imgPath: 'assets/leftTruck.png', dscrpstn: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis nesciunt' },
+    { id:6,name: 'Last Mile Delivery', imgPath: 'assets/leftTruck.png', dscrpstn: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis nesciunt' },
    ]
  
   return (

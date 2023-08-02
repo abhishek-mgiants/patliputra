@@ -96,9 +96,10 @@ achieve their goals.
         </div>
         
         <div className="column">
-          {/* <h2>Column 2</h2> */}
-          {/* Middle column content */}
         
+         <div className="aboutLogo">
+         <img src="assets/P3.png" alt="" />
+         </div>
       
         </div>
         <div data-aos="slide-left" className="column">
@@ -114,7 +115,14 @@ achieve their goals.
         </div>
       </div>
       <div className="staticSection">
+      <h2>Our vision</h2>
+       <div className="content">
+       <p>
+        To be the most Committed Company in Delivering a World Class Supply Chain Management Solutions.
+        </p>
+       </div>
 
+                 
       </div>
       <div className="about-leadership">
         <div className="arrowContainer">

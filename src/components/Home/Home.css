@@ -12,7 +12,46 @@
     width: 99vw;
     height: 100vh;
   } 
-  
+  .container {
+    /* text-align: center; */
+    /* padding: 20px; */
+}
+
+.animated-heading {
+  font-family: "Agency FB", sans-serif;
+  font-size: 100px;
+  font-weight: bold;
+  letter-spacing: 2px;
+  margin-bottom: 2vh;
+ color: white;
+ margin-right: 15px;
+
+    white-space: nowrap; /* Prevent line break between letters */
+    overflow: hidden; /* Hide overflowing letters */
+    display: inline-block; /* Inline block so the container width adjusts to the heading size */
+}
+
+@keyframes appearFromBaseline {
+    to {
+        opacity: 1; /* At the end of the animation, set opacity to 1 */
+        transform: translateY(0); /* Move the letters to their normal position */
+    }
+}
+
+/* Set initial position for each letter to be at the baseline */
+.animated-heading span {
+    display: inline-block;
+    opacity: 0; /* Set initial opacity to 0 */
+    letter-spacing: 0.5rem;
+    transform: translateY(100%); /* Start each letter below the baseline */
+}
+
+
+
+
+
+
+
   .navbar {
     display: flex;
     justify-content: flex-end;
@@ -52,11 +91,13 @@
     text-decoration: none;
    
     margin: 0 40px;
+    transition: all 0.4s;
   }
   
-  .a:hover {
-    font-weight: bold;
+  .nav-link a:hover{
+    color: orange;
   }
+
   
   .with-dropdown:hover .dropdown-menu {
     display: block;
@@ -78,10 +119,18 @@
   .dropdown-item {
     padding: 10px;
   }
+  .dropdown-menu li{
+    transition: all 0.5s;
+  }
+  .dropdown-menu li:hover{
+    background-color: #2E2867;
+  }
+
   
   .dropdown-item a {
     color: black;
     text-decoration: none;
+    
   }
   
   .home-heading-section {
@@ -136,6 +185,44 @@
   .cta-button:hover {
     background-color: #C86E29;
   }
+
+  .btn-fill-hover {
+    width: 150px;
+    height: 60px;
+    border: none;
+    font-size: 28px ;
+    background-color: #2E2867;
+    color: white;
+    cursor: pointer;
+    transition: all 0.4s;
+    /* margin-top: 10px; */
+    font-family: 'Agency FB';
+    margin-left: 10px;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+ 
+}
+
+.btn-fill-hover::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background-color: rgba(0, 123, 255, 0.8); /* Use rgba with some transparency */
+    transition: width 0.45s ease;
+    z-index: -1;
+    background-color: #C86E29;
+}
+
+.btn-fill-hover:hover::before {
+    width: 100%;
+    z-index: -1; /* Adjust the z-index to keep the pseudo-element behind the text */
+}
+
+
   
   .brand-logo img {
     vertical-align: middle;

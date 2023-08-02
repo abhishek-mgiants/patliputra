@@ -15,7 +15,7 @@ const Services2 = () => {
     { id:6,name: 'Last Mile Delivery', imgPath: 'assets/leftTruck.png', dscrpstn: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis nesciunt' },
    ]
  
-  return (
+  return ( 
     <>
     <div className='services-upperSection'>
       <h1>Services</h1>

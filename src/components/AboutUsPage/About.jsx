@@ -1,10 +1,12 @@
 import React, { useState } from "react";
 import "./About.css";
+import AOS from 'aos';
+import 'aos/dist/aos.css'
 // import ParticleBG from "../AboutUs/ParticleBG";
 
 const aboutLeadershipData = [
   {
-    id: 1,
+    id: 1, 
     name: "John Doe",
     designation: "CEO",
     imgPath: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8cHJvZmlsZSUyMHNob3R8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=500&q=60",
@@ -58,6 +60,7 @@ const aboutLeadershipData = [
 ];
 
 const About = () => {
+  AOS.init({duration:1000})
   const [currentProfile, setCurrentProfile] = useState(0);
 
   const handlePrevProfile = () => {
@@ -70,33 +73,44 @@ const About = () => {
     setCurrentProfile((prevProfile) =>
       prevProfile === aboutLeadershipData.length - 1 ? 0 : prevProfile + 1
     );
+ 
+  
   };
 
   return (
     <div className="about-container">
        
-      <h1 className="about-heading">About Us</h1>
+      <h1  className="about-heading">About Us</h1> 
       <div className="about-description">
-        <div className="column">
-          <h2>Column 1</h2>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sed
-            turpis nec dui gravida pharetra.
-          </p>
+        <div className="">
+        <p data-aos='slide-right'>
+        Patliputra Logistics is a logistics organization that was founded in 2013 with the goal of
+simplifying the complex operational solutions faced by businesses in India. We are a client-
+centric company that focuses on providing innovative, system-based logistics solutions that are
+tailored to the specific needs of our customers. <br /> <br />
+We are a company that is constantly innovating and evolving, and we are always looking for
+new ways to improve our services. We are committed to providing our customers with the best
+possible logistics experience, and we believe that we are the best company to help businesses
+achieve their goals.
+        </p>
         </div>
         
         <div className="column">
-          <h2>Column 2</h2>
+          {/* <h2>Column 2</h2> */}
           {/* Middle column content */}
         
       
         </div>
-        <div className="column">
-          <h2>Column 3</h2>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sed
-            turpis nec dui gravida pharetra.
-          </p>
+        <div data-aos="slide-left" className="column">
+          <ul>
+            <li> <h2>Plan it</h2>
+            </li>
+            <li> <h2>Build it</h2>
+            </li>
+            <li> <h2>Run it</h2>
+            </li>
+          </ul>
+         
         </div>
       </div>
       <div className="staticSection">
@@ -106,12 +120,12 @@ const About = () => {
         <div className="arrowContainer">
           <h2>Our Team</h2>
           <div className="arrows">
-            <span onClick={handleNextProfile}><i class="fa-solid fa-chevron-left"></i></span>
-            <span onClick={handlePrevProfile}><i class="fa-solid fa-chevron-right"></i></span>
+            <span onClick={handleNextProfile}><i className="fa-solid fa-chevron-left"></i></span>
+            <span onClick={handlePrevProfile}><i className="fa-solid fa-chevron-right"></i></span>
           </div>
         </div>
         <div className="leadershipContainer">
-        <img
+        <img 
             src={aboutLeadershipData[currentProfile].imgPath}
             alt={aboutLeadershipData[currentProfile].name}
           />

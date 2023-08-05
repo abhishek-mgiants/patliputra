@@ -3,7 +3,7 @@ const AboutUs = () => {
   return (
       <>
           <div className="aboutUs-container">
-          <img  className='aboutTruck' src="assets/truckRight.png" alt="" />
+          <img  className='aboutTruck' src="TR2.png" alt="" />
                <div className='aboutUsDescription'>
                <h2>Who We Are</h2> 
                <p>Patliputra is a strong SCM leaders and a leading provider of logistics services from India, offering a wide

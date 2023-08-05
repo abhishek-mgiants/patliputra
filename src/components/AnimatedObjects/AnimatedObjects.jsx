@@ -11,15 +11,18 @@ const AnimatedObjects = () => {
    <>
   
    <div data-aos="zoom-in-left"   className="wareHouseLeft">
-    <img src="assets/wareHouseLeft.png" alt="" />
+    <img src="warehouseleftt.png" alt="" />
      <div data-aos="slide-right"  className="leftTruck">
-        <img src="assets/leftTruck.png" alt="" />
+        <img src="T3.png" alt="" />
     </div>
      <div data-aos="slide-left"  className="rightTruck">
-        <img src="assets/rightTruck.png" alt="" />
+        <img src="T 1.png" alt="" />
     </div>
       <div data-aos="slide-left"   data-aos-offset="200" className="manWithBox">
-        <img src="assets/manWithBox.png" alt="" />
+        <img src="Men2.png" alt="" />
+    </div>
+    <div data-aos="slide-left"   data-aos-offset="200" className="manWithBox">
+        <img src="Men1.png" alt="" />
     </div>
      <div data-aos="slide-right" data-aos-offset="200" className='cardBoardBoxes'>
     <img src="assets/cardBoardBoxes.png" alt="" />

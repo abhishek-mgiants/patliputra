@@ -1,14 +1,4 @@
 
-.clients-container {
-  width: 2100px;
-  height: auto;
-  display: flex;
-  justify-content: space-around;
-  gap: 50px;
-  margin-top: 20px;
-  animation: popup 25s linear infinite;
-
-}
 .clients-heading{
   width: 100%;
   height: auto;
@@ -19,7 +9,7 @@
   margin-top: 30vh;
   text-align: center;
   color: #2E2867;
-}
+} 
 .clients-heading span{
   color: #C86E29;
 }
@@ -54,8 +44,37 @@
 }
 
 .client-name {
-  margin-top: 10px;
+  /* margin-top: 10px; */
   text-align: center;
   font-size: 18px;
   font-weight: bold;
+}
+/* ************ */
+.clients-main{
+  width: 100%;
+  height: auto;
+  
+}
+#stripe{
+  width: 100%;
+   height: 200px;
+ /* background-color: black; */
+ overflow: hidden;
+ 
+}
+.cnt{
+  width: fit-content;
+  height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* border: 1px solid red; */
+  /* flex-shrink: ; */
+}
+.elem{
+  /* background-color: yellow; */
+  padding: 0 1vw;
+  color: white;
+  border: 1px solid white;
+  flex-shrink: 0;
 }

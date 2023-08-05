@@ -7,7 +7,7 @@ import 'aos/dist/aos.css'
 const aboutLeadershipData = [
   {
     id: 1, 
-    name: "John Doe",
+    name: "John Doe", 
     designation: "CEO",
     imgPath: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8cHJvZmlsZSUyMHNob3R8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=500&q=60",
     description:
@@ -123,6 +123,33 @@ achieve their goals.
        </div>
 
                  
+      </div>
+
+      <div className="expertSolution">
+        <h2>Expert Solution in 4 key Areas</h2>
+        <div data-aos='fade-up'  className="iconContainer">
+          <div  className="iconContent">
+          <img  src="Descriptive.png" alt="" />
+          <h3>Descriptive</h3>
+          <span>(Value Mapping  Analytics) </span>
+          </div>
+          <div className="iconContent">
+          <img  src="Prescriptive.png" alt="" />
+          <h3>Prescriptive</h3>
+          <span>(Performance  Analytics) </span>
+          </div>
+          <div className="iconContent">
+          <img  src="control-tower.png" alt="" />
+          <h3>Control Tower</h3>
+          <span>(Optimization)</span>
+          </div>
+          <div className="iconContent">
+          <img  src="Diagnostics.png" alt="" />
+          <h3>Diagnostics</h3>
+          <span></span>
+          </div>
+          
+        </div>
       </div>
       <div className="about-leadership">
         <div className="arrowContainer">

@@ -6,7 +6,7 @@
 
 .wareHouseLeft img{
     width: 100%;
-    height: 99vh;
+    height: 99vh; 
     
 }
 .wareHouseLeft{
@@ -14,7 +14,7 @@
 }
 /***********************  */
 .leftTruck img{
-    width: 350px;
+    width: 250px;
     height: 200px;
     
 }
@@ -26,7 +26,7 @@
 }
 /* ************************ */
 .rightTruck img{
-    width: 500px;
+    width: 400px;
     height: 350px;
     
 }
@@ -34,7 +34,7 @@
     position: relative;
     z-index: 9999;
     bottom: 82vh;
-    left: 20vw;
+    left: 22vw;
    
     width: 350px;
 }
@@ -52,6 +52,7 @@
     left: 25vw;
     width: 60px;
 }
+
 /* ******************* */
 .cardBoardBoxes img{
     width: 700px;

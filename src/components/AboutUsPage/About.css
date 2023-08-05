@@ -85,7 +85,7 @@
     font-size: 98px;
     font-weight: bold;
     letter-spacing: 5px;
-    color: #110864;
+    color: #ffffff;
     background-color: rgba(70, 70, 70, 0.5);
   
     font-family: Agency FB;
@@ -102,17 +102,17 @@
     font-size: 28px;
     font-weight: bold;
     /* letter-spacing: 5px; */
-    color:black;
+    color:skyblue;
     font-family: Arial, Helvetica, sans-serif;
     text-align: center;
-    width: 30%;
-    margin-left: 35%;
+    width: 100%;
+    /* margin-left: 35%; */
   }
   .about-leadership {
     display: grid;
     grid-template-columns: 1fr 4fr;
     gap: 20px;
-    margin: 30px 0;
+    margin: 10px 0;
   }
 
   .leadershipContainer{
@@ -141,7 +141,6 @@
   .arrows:hover{
     cursor: pointer;
   
-
   }
   
   .about-leadership img {
@@ -167,4 +166,40 @@
   }
 
 
-  
+  .expertSolution{
+    width: 100%;
+    height: auto;
+    background: linear-gradient(to right, rgba(255,0,0,0), #a9a5d6);
+
+  }
+
+  .expertSolution h2{
+    font-size: 68px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    text-decoration: underline;
+    color: #000000;
+    /* background-color: rgba(70, 70, 70, 0.5); */
+    font-family: Agency FB;
+    margin-bottom: 0;
+  }
+   .iconContainer{
+    margin: 30px 0;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+   }
+   .iconContent{
+    transition: all 0.5s;
+
+   }
+   .iconContent:hover{
+    transform: scale(1.2);
+
+   }
+  .iconContent img{
+    width: 100px;
+    height: auto;
+    filter: drop-shadow(0px 10px 5px #171435)
+    
+  }

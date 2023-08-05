@@ -6,21 +6,23 @@
 .whyusContainer{
     width: 100vw;
     height: 100vh;
-    background: url('/whyChooseUsbg.jpg');
+    background: url('/why_choose_us.png');
     background-repeat: no-repeat;
     background-size: 100vw 120vh;
     margin:5px 0;
     position: relative;
 }
 .whyusContainer img{
+    width: 200px;
+    height: auto;
     position: absolute;
-    top: 10vh;
-    left: 37vw;
+    top: 25vh;
+    left: 35vw;
     transition: all 0.4s;
     
 }
 .whyusContainer:hover img{
-    transform: translate(100px,40px) scale(1.1);
+    transform: translate(-100px,40px) scale(1.1);
 }
 .whyusDescription{
     width: 450px;

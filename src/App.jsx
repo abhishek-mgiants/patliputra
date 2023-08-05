@@ -15,10 +15,10 @@ import { BrowserRouter, Route,Routes } from 'react-router-dom'
 
 export default function App() {
   return (
-   <BrowserRouter>
+   <BrowserRouter basename='/patliputra'>
    <Routes>
 
-    <Route path='/patliputra' element={<div>  <h1>Home page</h1> </div>}/>
+    <Route exact path='/patliputra' element={<div>  <h1>Home page</h1> </div>}/>
     <Route path='/patliputra/about' element={<div>  <h1>About page</h1> </div>}   />
     <Route path='/patliputra/contact' element={<div>  <h1>contact page page</h1> </div>}/>
 

@@ -11,59 +11,22 @@ import Whyus from './components/WhyUs/Whyus'
 import ContactUs from './components/ContactUs/ContactUs'
 import About from './components/AboutUsPage/About'
 import ParticleBG from './components/AboutUs/ParticleBG'
-
+import { Routes,Route, Link } from 'react-router-dom'
 import Contact from './components/HomeContact/Contact'
 
 export default function App() {
   return (
-   <>
-    {/* <Navbar/> */}
-    <Home/>
-     <About/>
-
-     <AnimatedObjects/>
-
-     <Clients/>
-     <AboutUs/>
-     <Services2/>
-     <Whyus/>
-
-     <div>
-      <div className="map-container"
-      style={{ position:'relative'}}
-      >
-      <img src="/map.png" style={{width:'100%', height:'100%'}} alt="" />
-      <div className="map-image-container"
-      style={{
-        position:'absolute',
-        width:'300px',
-        height:'350px',
-        overflow:'hidden',
-        border:'2px solid rgb(122, 122, 122)',
-        boxShadow:'0px 5px 10px black',
-        top:'20vh',
-        right:'10vw',
-        padding:'20px',
-        backgroundColor:'#e4e3ec'
-
-      }}
-      >
-        <h1>Locations</h1>
-        <ul>
-          <li>Gurgaon</li>
-          <li>Noida</li>
-          <li>Delhi</li>
-          <li>Mumbai</li>  
-        </ul>
-      </div>
-      </div>
-      
-     </div>
-     <Contact/>
-     <Services/>
-     <ContactUs/> 
-     <Footer/>
- 
-   </>
+    <>
+    <nav>
+      <ul>
+        <li> <Link to="/patliputra">Home</Link> </li>
+        <li>  <Link to="/patliputra/about">About</Link> </li>
+      </ul>
+    </nav>
+     <Routes>
+      <Route path='/patliputra' element={<Home/>}/>
+      <Route path='/patliputra/about' element={<About/>}/>
+     </Routes>
+    </>
   )
 }

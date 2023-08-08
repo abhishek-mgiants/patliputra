@@ -21,7 +21,7 @@ const ContactUs = () => {
         </div>
       </div>
       <div className="contact-form-container">
-        <form>
+      <form>
         <div className="formflex">
         <div className="form-group">
             <label>Name:</label>
@@ -33,7 +33,7 @@ const ContactUs = () => {
           </div>
           <div className="form-group">
             <label>Subject:</label>
-            <input type="text" name="subject" />
+            <input type="text" name="subject" /> 
           </div>
           <div className="form-group">
             <label>Phone:</label>

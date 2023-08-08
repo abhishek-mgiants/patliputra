@@ -136,8 +136,8 @@ const Clients = () => {
           
             {
             clientsData.map((client) => (
-              <div className="elem">
-                <div key={client.id} className="clients-card">
+              <div key={client.id} className="elem">
+                <div  className="clients-card">
             <img src={client.imgPath} alt="" />
                
            </div>

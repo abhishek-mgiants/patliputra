@@ -1,11 +1,15 @@
 import React, { useState } from 'react';
 import './Services.css';
+import AOS from 'aos';
+import 'aos/dist/aos.css'
+import Aos from 'aos';
 
 const Services = () => {
+  Aos.init({duration:1000})
   const [selectedService, setSelectedService] = useState(null);
 
   const services = [
-    {
+    { 
       id: 1,
       name: 'Supply Chain',
       imgpath: 'https://images.pexels.com/photos/1427107/pexels-photo-1427107.jpeg?auto=compress&cs=tinysrgb&w=600',
@@ -69,8 +73,8 @@ const Services = () => {
       </div>
       <div className="services-content">
         {selectedService ? (
-          <div className="service-details">
-            <div className="service-image">
+          <div  className="service-details">
+            <div  className="service-image">
               <img src={selectedService.imgpath} alt={selectedService.name} />
             </div>
             <div className="service-info">

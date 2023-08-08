@@ -50,9 +50,9 @@ const Footer = () => {
       </div>
   
 
-        <div class="outer-container">
-  <div class="inner-container">
-  <i class="fa-solid fa-truck"></i>
+        <div className="outer-container">
+  <div className="inner-container">
+  <i className="fa-solid fa-truck"></i>
   </div>
 </div>
 

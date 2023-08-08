@@ -1,6 +1,25 @@
+import { useEffect } from 'react';
 import './Whyus.css'
 import Accordion from 'react-bootstrap/Accordion';
 const Whyus = () => {
+ useEffect(()=>{
+  const accordionHeaders = document.querySelectorAll('.accordion-header');
+
+accordionHeaders.forEach(header => {
+    header.addEventListener('click', () => {
+      console.log('clicked');
+        const content = header.nextElementSibling;
+        content.style.display = content.style.display === 'block' ? 'none' : 'block';
+        accordionHeaders.forEach(otherHeader => {
+            if (otherHeader !== header) {
+                otherHeader.nextElementSibling.style.display = 'none';
+            }
+            
+        });
+    });
+});
+ })
+
   return (
   <>
   <div className="whyusContainer">
@@ -8,48 +27,40 @@ const Whyus = () => {
      <div className="whyusDescription">
         <h3>
             Why Choose Us
-        </h3>
-        <Accordion defaultActiveKey="0">
-
-      <Accordion.Item eventKey="0">
-        <Accordion.Header> <h2>
-        Plan It
-         </h2></Accordion.Header>
-        <Accordion.Body>
-        <ul>
-          <li>Reduce Costs</li>
-           <li>Improve Efficiency</li>
-           <li>Improve Customer service</li>
-        </ul>
-        </Accordion.Body>
-      </Accordion.Item>
-      <Accordion.Item eventKey="1">
-        <Accordion.Header>
-         <h2>
-            Build It
-         </h2>
-         </Accordion.Header>
-        <Accordion.Body>
-        <ul>
-          <li>Increasing Efficiency </li>
-           <li>Reduced Risk</li>
-           <li>Increased Compliance</li>
-        </ul>
-        </Accordion.Body>
-      </Accordion.Item>
-      <Accordion.Item eventKey="2" >
-        <Accordion.Header> <h2>
-            Run It
-         </h2></Accordion.Header>
-        <Accordion.Body>
-        <ul>
-          <li>Right Delivery Model</li>
-           <li>Partner with right suppliers</li>
-           <li>Technology Advantage</li>
-        </ul>
-        </Accordion.Body>
-      </Accordion.Item>
-    </Accordion>
+        </h3> 
+        <div className="accordion">
+        <div className="accordion-item">
+            <div className="accordion-header">
+            <i className="fa-solid fa-arrow-right"></i>
+              <h1>PLAN IT</h1>
+               
+              
+              </div>
+            <div className="accordion-content">
+                <p>This is the content of section 1.</p>
+            </div>
+        </div>
+        <div className="accordion-item">
+        <div className="accordion-header">
+            <i className="fa-solid fa-arrow-right"></i>
+              <h1>RUN IT</h1>
+               
+              
+              </div>
+            <div className="accordion-content">
+                <p>This is the content of section 2.</p>
+            </div>
+        </div>
+        <div className="accordion-item">
+        <div className="accordion-header">
+            <i className="fa-solid fa-arrow-right"></i>
+              <h1>BUILD IT</h1>
+              </div>
+            <div className="accordion-content">
+                <p>This is the content of section 3.</p>
+            </div>
+        </div>
+    </div>
      </div>
   </div>
   

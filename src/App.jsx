@@ -11,13 +11,14 @@ import Whyus from './components/WhyUs/Whyus'
 import ContactUs from './components/ContactUs/ContactUs'
 import About from './components/AboutUsPage/About'
 import ParticleBG from './components/AboutUs/ParticleBG'
-import { BrowserRouter, Route,Routes } from 'react-router-dom'
+import { BrowserRouter, HashRouter, Route,Routes } from 'react-router-dom'
+import Contact from './components/HomeContact/Contact'
 
 export default function App() {
   return (
    <>
-     {/* <Navbar/> */}
-     <Home/>
+    {/* <Navbar/> */}
+    <Home/>
      <About/>
 
      <AnimatedObjects/>
@@ -31,7 +32,7 @@ export default function App() {
       <div className="map-container"
       style={{ position:'relative'}}
       >
-      <img src="assets/IndiaMap.jpg" style={{width:'100%', height:'100%'}} alt="" />
+      <img src="/map.png" style={{width:'100%', height:'100%'}} alt="" />
       <div className="map-image-container"
       style={{
         position:'absolute',
@@ -58,6 +59,8 @@ export default function App() {
       </div>
       
      </div>
+     <Contact/>
+     <Services/>
      <ContactUs/> 
      <Footer/>
    </>

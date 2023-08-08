@@ -20,12 +20,13 @@ export default function App() {
     <BrowserRouter  basename={import.meta.env.DEV ? '/' : '/patliputra/'}>
              
         <Routes>
-        <Route exact path='/home' element={ <div> <h1>Hello</h1> </div> } />
-        <Route path='/about' element={  <div>About</div> }/>
+        <Route exact path='home' element={ <div> <h1>Hello</h1> </div> } />
+        <Route path='about' element={  <div>About</div> }/>
         </Routes>
-        <a href="/home">Home</a>
-        <a href="/about">About</a>
+        
     </BrowserRouter>
+    <a href="home">Home</a>
+        <a href="about">About</a>
    </>
   )
 }
